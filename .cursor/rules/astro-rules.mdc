@@ -1,0 +1,101 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+You are an expert in JavaScript, TypeScript, and Astro framework for scalable web development.
+
+Key Principles
+   - Write concise, technical responses with accurate Astro examples.
+   - Leverage Astro’s partial hydration and multi-framework support effectively.
+   - Prioritize static generation and minimal JavaScript for optimal performance.
+   - Use descriptive variable names and follow Astro’s naming conventions.
+   - Organize files using Astro’s file-based routing system.
+
+Astro Project Structure
+   - Use the recommended Astro project structure:
+   - src/
+   - components/
+   - layouts/
+   - pages/
+   - styles/
+   - public/
+   - astro.config.mjs
+
+Component Development
+   - Create .astro files for Astro components.
+   - Use framework-specific components (React, Vue, Svelte) when necessary.
+   - Implement proper component composition and reusability.
+   - Use Astro.props for data passing.
+   - Leverage Astro’s built-in components like <Markdown /> when appropriate.
+
+Routing and Pages
+   - Utilize Astro’s file-based routing system in the src/pages/ directory.
+   - Implement dynamic routes using [...slug].astro syntax.
+   - Use getStaticPaths() for generating static pages with dynamic routes.
+   - Implement proper 404 handling with a 404.astro page.
+
+Content Management
+   - Use Markdown (.md) or MDX (.mdx) files for content-heavy pages.
+   - Leverage Astro’s built-in support for frontmatter in Markdown files.
+   - Implement content collections for organized content management.
+
+Styling
+   - Use scoped <style> blocks within .astro files for local styling.
+   - Use global CSS by importing into src/layouts/BaseLayout.astro or similar.
+   - Organize shared styles under src/styles/.
+   - Use vanilla CSS or preprocessors like Sass/Less as needed.
+   - Implement responsive design using CSS media queries and custom properties.
+
+Performance Optimization
+   - Minimize use of client-side JavaScript; leverage Astro’s static generation.
+   - Use the client:* directives judiciously for partial hydration:
+   - client:load for immediately needed interactivity
+   - client:idle for non-critical interactivity
+   - client:visible for components that hydrate when visible
+   - Implement lazy loading for images and assets.
+   - Use Astro’s built-in image optimization and asset bundling.
+
+Data Fetching
+   - Use Astro.props for passing data to components.
+   - Implement getStaticPaths() for data fetched at build time.
+   - Use Astro.glob() for working with local files efficiently.
+   - Handle errors gracefully in data-fetching logic.
+
+SEO and Meta Tags
+   - Use the <head> tag in .astro files for adding meta information.
+   - Implement canonical URLs.
+   - Use reusable SEO component patterns for consistency.
+
+Integrations and Plugins
+   - Use Astro integrations like @astrojs/image or @astrojs/mdx for extended functionality.
+   - Configure integrations in astro.config.mjs.
+   - Prefer official integrations for reliability and compatibility.
+
+Build and Deployment
+   - Optimize using the astro build command.
+   - Manage environment variables properly for different environments.
+   - Deploy to static hosting platforms like Netlify, Vercel, or Cloudflare Pages.
+   - Use CI/CD pipelines for automated builds and deployments.
+
+Testing
+   - Write unit tests for utility functions.
+   - Use end-to-end testing tools like Cypress or Playwright.
+   - Consider visual regression testing where relevant.
+
+Accessibility
+   - Use semantic HTML in components.
+   - Apply ARIA roles and attributes where appropriate.
+   - Support full keyboard navigation and focus handling.
+
+Key Conventions
+	1.	Follow Astro’s Style Guide and formatting conventions.
+	2.	Use TypeScript for better type safety and DX.
+	3.	Implement robust error handling and logging.
+	4.	Generate RSS feeds with Astro for content-focused sites.
+	5.	Optimize images using Astro’s built-in <Image /> component or HTML <img> with proper loading attributes.
+
+Performance Metrics
+   - Prioritize Core Web Vitals: LCP, FID, CLS.
+   - Use Lighthouse and WebPageTest for auditing.
+   - Define and monitor performance budgets.

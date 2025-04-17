@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="FHS - Filesystem Hierarchy Standard">
+  <main>
+    <h1>Filesystem Hierarchy Standard (FHS)</h1>
+
+    <p>
+      The Filesystem Hierarchy Standard (FHS) is a reference describing the
+      conventions used for the layout of a UNIX system. It has been made popular
+      by its use in Linux distributions, but it is used by other UNIX variants
+      as well.
+    </p>
+
+    <h2>Purpose</h2>
+    <p>
+      The FHS was created to provide a standardized directory structure for
+      UNIX-like operating systems. This standardization helps users and
+      developers predict where to find files and directories, making it easier
+      to:
+    </p>
+    <ul>
+      <li>
+        Write and maintain software that works across different UNIX systems
+      </li>
+      <li>Understand where to find system files and programs</li>
+      <li>Maintain consistency across different Linux distributions</li>
+    </ul>
+
+    <h2>Key Directories</h2>
+    <ul class="directory-list">
+      <li>
+        <code>/bin</code> - Essential command binaries that all users may need
+      </li>
+      <li><code>/boot</code> - Static files of the boot loader</li>
+      <li><code>/dev</code> - Device files</li>
+      <li><code>/etc</code> - Host-specific system configuration</li>
+      <li><code>/home</code> - User home directories</li>
+      <li><code>/lib</code> - Essential shared libraries and kernel modules</li>
+      <li>
+        <code>/mnt</code> - Mount point for temporarily mounted filesystems
+      </li>
+      <li><code>/opt</code> - Optional application software packages</li>
+      <li>
+        <code>/proc</code> - Virtual filesystem providing process and kernel information
+      </li>
+      <li><code>/root</code> - Home directory for the root user</li>
+      <li><code>/sbin</code> - Essential system binaries</li>
+      <li><code>/tmp</code> - Temporary files</li>
+      <li><code>/usr</code> - Secondary hierarchy for read-only user data</li>
+      <li><code>/var</code> - Variable files</li>
+    </ul>
+
+    <h2>Benefits</h2>
+    <p>Following the FHS provides several advantages:</p>
+    <ul>
+      <li>Predictable system layout across different distributions</li>
+      <li>Easier software installation and maintenance</li>
+      <li>Better system administration and troubleshooting</li>
+      <li>Improved compatibility between different UNIX-like systems</li>
+    </ul>
+
+    <h2>Version History</h2>
+    <p>The FHS has evolved over time, with major versions including:</p>
+    <ul>
+      <li>FHS 1.0 (1994)</li>
+      <li>FHS 2.0 (1997)</li>
+      <li>FHS 2.1 (2000)</li>
+      <li>FHS 2.2 (2001)</li>
+      <li>FHS 2.3 (2004)</li>
+      <li>FHS 3.0 (2015)</li>
+    </ul>
+
+    <p>
+      The standard is maintained by the Linux Foundation and continues to be
+      updated to reflect modern UNIX and Linux system needs.
+    </p>
+  </main>
+</Layout>
+
